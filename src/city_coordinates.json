@@ -1,0 +1,282 @@
+[
+  {
+    "latitude": 52.367,
+    "longitude": 4.904,
+    "city": "Amsterdam, Netherlands"
+  },
+  {
+    "latitude": 39.933,
+    "longitude": 32.859,
+    "city": "Ankara, Turkey"
+  },
+  {
+    "latitude": 56.134,
+    "longitude": 12.945,
+    "city": "Åstorp, Sweden"
+  },
+  {
+    "latitude": 37.983,
+    "longitude": 23.727,
+    "city": "Athens, Greece"
+  },
+  {
+    "latitude": 54.597,
+    "longitude": -5.930,
+    "city": "Belfast, Northern Ireland"
+  },
+  {
+    "latitude": 41.387,
+    "longitude": 2.168,
+    "city": "Barcelona, Spain"
+  },
+  {
+    "latitude": 52.520,
+    "longitude": 13.405,
+    "city": "Berlin, Germany"
+  },
+  {
+    "latitude": 46.948,
+    "longitude": 7.447,
+    "city": "Bern, Switzerland"
+  },
+  {
+    "latitude": 43.263,
+    "longitude": -2.935,
+    "city": "Bilbao, Spain"
+  },
+  {
+    "latitude": 50.847,
+    "longitude": 4.357,
+    "city": "Brussels, Belgium"
+  },
+  {
+    "latitude": 47.497,
+    "longitude": 19.040,
+    "city": "Bucharest, Romania"
+  },
+  {
+    "latitude": 59.329,
+    "longitude": 18.068,
+    "city": "Budapest, Hungary"
+  },
+  {
+    "latitude": 51.483,
+    "longitude": -3.168,
+    "city": "Cardiff, Wales"
+  },
+  {
+    "latitude": 50.937,
+    "longitude": 6.96,
+    "city": "Cologne, Germany"
+  },
+  {
+    "latitude": 55.676,
+    "longitude": 12.568,
+    "city": "Copenhagen, Denmark"
+  },
+  {
+    "latitude": 51.898,
+    "longitude": -8.475,
+    "city": "Cork, Ireland"
+  },
+  {
+    "latitude": 53.349,
+    "longitude": -6.260,
+    "city": "Dublin, Ireland"
+  },
+  {
+    "latitude": 55.953,
+    "longitude": -3.188,
+    "city": "Edinburgh, Scotland"
+  },
+  {
+    "latitude": 43.7696,
+    "longitude": 11.255,
+    "city": "Florence, Italy"
+  },
+  {
+    "latitude": 50.110,
+    "longitude": 8.682,
+    "city": "Frankfurt, Germany"
+  },
+  {
+    "latitude": 43.254,
+    "longitude": 6.637,
+    "city": "French Riviera, France"
+  },
+  {
+    "latitude": 32.650,
+    "longitude": -16.908,
+    "city": "Funchal, Portugal"
+  },
+  {
+    "latitude": 36.140,
+    "longitude": -5.353,
+    "city": "Gibraltar, "
+  },
+  {
+    "latitude": 57.708,
+    "longitude": 11.974,
+    "city": "Gothenburg, Sweden"
+  },
+  {
+    "latitude": 53.548,
+    "longitude": 9.987,
+    "city": "Hamburg, Germany"
+  },
+  {
+    "latitude": 60.169,
+    "longitude": 24.938,
+    "city": "Helsinki, Finland"
+  },
+  {
+    "latitude": 39.020,
+    "longitude": 1.482,
+    "city": "Ibiza, Spain"
+  },
+  {
+    "latitude": 50.450,
+    "longitude": 30.523,
+    "city": "Kyiv, Ukraine"
+  },
+  {
+    "latitude": 61.115,
+    "longitude": 10.466,
+    "city": "Lillehammer, Norway"
+  },
+  {
+    "latitude": 38.722,
+    "longitude": -9.139,
+    "city": "Lisbon, Portugal"
+  },
+  {
+    "latitude": 51.507,
+    "longitude": -0.127,
+    "city": "London, England"
+  },
+  {
+    "latitude": 40.416,
+    "longitude": -3.703,
+    "city": "Madrid, Spain"
+  },
+  {
+    "latitude": 39.695,
+    "longitude": 3.017,
+    "city": "Mallorca, Spain"
+  },
+  {
+    "latitude": 53.480,
+    "longitude": -2.242,
+    "city": "Manchester, England"
+  },
+  {
+    "latitude": 43.296,
+    "longitude": 5.369,
+    "city": "Marseille, France"
+  },
+  {
+    "latitude": 27.760,
+    "longitude": -15.586,
+    "city": "Maspalomas, Spain"
+  },
+  {
+    "latitude": 45.464,
+    "longitude": 9.190,
+    "city": "Milan, Italy"
+  },
+  {
+    "latitude": 48.135,
+    "longitude": 11.582,
+    "city": "Munich, Germany"
+  },
+  {
+    "latitude": 40.851,
+    "longitude": 14.268,
+    "city": "Naples, Italy"
+  },
+  {
+    "latitude": 43.034,
+    "longitude": -2.417,
+    "city": "Oñati, Spain"
+  },
+  {
+    "latitude": 59.913,
+    "longitude": 10.752,
+    "city": "Oslo, Norway"
+  },
+  {
+    "latitude": 48.856,
+    "longitude": 2.352,
+    "city": "Paris, France"
+  },
+  {
+    "latitude": 50.075,
+    "longitude": 14.437,
+    "city": "Prague, Czech Republic"
+  },
+  {
+    "latitude": 64.146,
+    "longitude": -21.942,
+    "city": "Reykjavík, Iceland"
+  },
+  {
+    "latitude": 56.879,
+    "longitude": 24.603,
+    "city": "Riga, Latvia"
+  },
+  {
+    "latitude": 41.902,
+    "longitude": 12.496,
+    "city": "Rome, Italy"
+  },
+  {
+    "latitude": 39.453,
+    "longitude": -31.127,
+    "city": "Santa Cruz das Flores, Portugal"
+  },
+  {
+    "latitude": 28.463,
+    "longitude": -16.251,
+    "city": "Santa Cruz de Tenerife, Spain"
+  },
+  {
+    "latitude": 57.273,
+    "longitude": -6.215,
+    "city": "Skye, Scotland"
+  },
+  {
+    "latitude": 42.697,
+    "longitude": 23.321,
+    "city": "Sofia, Bulgaria"
+  },
+  {
+    "latitude": 59.329,
+    "longitude": 18.068,
+    "city": "Stockholm, Sweden"
+  },
+  {
+    "latitude": 59.437,
+    "longitude": 24.753,
+    "city": "Tallinn, Estonia"
+  },
+  {
+    "latitude": 18.208,
+    "longitude": 16.373,
+    "city": "Vienna, Austria"
+  },
+  {
+    "latitude": 52.229,
+    "longitude": 21.012,
+    "city": "Warsaw, Poland"
+  },
+  {
+    "latitude": 53.961,
+    "longitude": -1.07,
+    "city": "York, England"
+  },
+  {
+    "latitude": 47.376,
+    "longitude": 8.541,
+    "city": "Zurich, Switzerland"
+  }
+]
