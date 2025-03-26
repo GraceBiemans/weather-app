@@ -8,7 +8,7 @@ const WeatherData = ({selectedCityObject}) => {
     const [error, setError] = useState(null);
     const [cityData, setCityData] = useState(selectedCityObject);
 
-    let url = `http://www.7timer.info/bin/api.pl?lon=${cityData.longitude}&lat=${cityData.latitude}&product=civillight&output=json`;
+    let url = `https://www.7timer.info/bin/api.pl?lon=${cityData.longitude}&lat=${cityData.latitude}&product=civillight&output=json`;
 
     useEffect(() => {
         setCityData(selectedCityObject);
