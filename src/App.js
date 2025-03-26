@@ -22,7 +22,6 @@ function App() {
 
       {selectedCity.city && (
         <div>
-          <p>Weather for {selectedCity.city}</p>
           <WeatherData selectedCityObject={selectedCity}/>
         </div>
       )

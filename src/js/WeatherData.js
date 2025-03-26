@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import DayWeather from './DayWeather';
 
 const WeatherData = ({selectedCityObject}) => {
 
@@ -45,8 +46,10 @@ const WeatherData = ({selectedCityObject}) => {
             <div id="weather-container">
                 {weatherData.length > 0 ? (
                 weatherData.map((entry, index) => (
-                    <div key={index} className="weather-item">
-                    <strong>Weather:</strong> {entry.weather}
+                    <div>
+                        <div key={index} className="weather-item">
+                            <DayWeather weatherType={entry.weather} index={index} />
+                        </div>
                     </div>
                 ))
                 ) : (
