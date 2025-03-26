@@ -13,12 +13,13 @@
     width: 250px;
     cursor: pointer;
     border: 2px solid #ccc;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: #fff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 5px 10px 10px lightgray;
   }
   
   .custom-dropdown:hover {
@@ -42,7 +43,7 @@
     background-color: #fff;
     border: 2px solid #ccc;
     border-top: none;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 10;
     list-style: none;

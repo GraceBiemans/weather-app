@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react'
-import WeatherData from './js/WeatherData';
+import WeatherContainer from './js/WeatherContainer';
 import CityDropdown from './js/CityDropdown';
 
 function App() {
@@ -18,11 +18,13 @@ function App() {
 
   return (
     <div>
+      <h1>European Weather Forecast</h1>
+
       <CityDropdown onCityChange={handleCityChange}/>
 
       {selectedCity.city && (
         <div>
-          <WeatherData selectedCityObject={selectedCity}/>
+          <WeatherContainer selectedCityObject={selectedCity}/>
         </div>
       )
     }
