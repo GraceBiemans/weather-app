@@ -12,10 +12,10 @@ const DayWeather = ({ weatherType, index }) => {
 
   return (
     <span>
-        <div className="day-weather">
+        <div className="weather--day">
             <WeatherDate index={index}></WeatherDate>
-            <div className="weather-icon">{weatherData.icon}</div>
-            <div className="weather-type">{weatherData.label}</div>
+            <div className="weather--icon">{weatherData.icon}</div>
+            <div className="weather--type">{weatherData.label}</div>
         </div>
         <span class="tooltiptext">{weatherData.description}</span>
     </span>

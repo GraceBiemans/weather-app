@@ -4,31 +4,31 @@
     margin: 0 auto;
   }
   
-  .weather-item {
-    width: 120px;
+  .weather--item {
+    width: 7rem;
     text-align: center;
     background-color: lightblue;
     border-radius: 15px;
     padding: 15px;
     margin: 5px;
-    height: 120px;
+    height: 7rem;
     box-shadow: 5px 10px 10px lightgray;
   }
   
-  .day-weather {
+  .weather--day {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   
-  .weather-type {
+  .weather--type {
     font-size: 0.8rem;
     font-weight: normal;
     margin-bottom: 5px;
   }
   
-  .weather-icon {
+  .weather--icon {
     font-size: 2.5rem;
   }
   
@@ -55,13 +55,15 @@
     visibility: visible;
   }
 
-.weather-date {
+.weather--date {
   font-weight: bold;
 }
 
-.weather-messages {
-  justify-items: center;
+.weather--messages {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   padding: 20px;
+  text-align: center
 }
   

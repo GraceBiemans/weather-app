@@ -19,7 +19,7 @@ const CityDropdown = ({ onCityChange }) => {
   };
 
   return (
-    <div className="city-dropdown-container">
+    <div className="city-dropdown--container">
       <div className="custom-dropdown" onClick={toggleDropdown}>
         <div className="dropdown-selected">
           {selectedOption || 'Select a city'}

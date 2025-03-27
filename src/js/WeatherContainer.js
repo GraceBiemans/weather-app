@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import DayWeather from './DayWeather';
+import { ThreeDot } from 'react-loading-indicators';
 
 const WeatherData = ({selectedCityObject}) => {
 
@@ -40,8 +41,13 @@ const WeatherData = ({selectedCityObject}) => {
 
     return (
         <div>
-            <div className='weather-messages'>
-                {loading && <p>Loading weather data...</p>}
+            <div className='weather--messages'>
+                {loading && 
+                    <span>
+                        <ThreeDot variant="bounce" color="#ADD8E6" size="medium" text="" textColor="" />
+                        <p>Loading weather data...</p>
+                    </span>
+                }
                 {error && <p style={{ color: 'red' }}>{error}</p>}
             </div>
 
@@ -49,7 +55,7 @@ const WeatherData = ({selectedCityObject}) => {
                 {weatherData.length > 0 && (!loading || !error) ? (
                 weatherData.map((entry, index) => (
                     <div>
-                        <div key={index} className="weather-item tooltip">
+                        <div key={index} className="weather--item tooltip">
                             <DayWeather weatherType={entry.weather} index={index} />
                         </div>
                     </div>

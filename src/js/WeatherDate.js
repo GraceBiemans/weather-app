@@ -15,7 +15,7 @@ const WeatherDate = ({ index }) => {
     const dayOfMonth = futureDate.getDate();
 
     return (
-        <div className='weather-date'>
+        <div className='weather--date'>
             {dayName}
             <br/>
             {monthName} {dayOfMonth}
