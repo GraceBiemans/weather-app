@@ -17,7 +17,7 @@ const DayWeather = ({ weatherType, index }) => {
             <div className="weather--icon">{weatherData.icon}</div>
             <div className="weather--type">{weatherData.label}</div>
         </div>
-        <span class="tooltip--text">{weatherData.description}</span>
+        <span className="tooltip--text">{weatherData.description}</span>
     </span>
   );
 };
