@@ -1,18 +1,39 @@
 #weather-container {
-    display: flex;
+    display: grid;
+    justify-items: center;
     padding: 10px;
     margin: 0 auto;
+    grid-template-columns: auto auto;
+    grid-gap: 0.75rem;
+
+    @media only screen and (min-width: 600px) {
+      grid-gap: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      display: flex;
+    }
   }
   
   .weather--item {
-    width: 7rem;
     text-align: center;
     background-color: lightblue;
     border-radius: 15px;
     padding: 15px;
     margin: 5px;
-    height: 7rem;
     box-shadow: 5px 10px 10px lightgray;
+    width: 8rem;
+    height: 7rem;
+
+    @media only screen and (min-width: 768px) {
+      width: 15rem;
+      height: 7rem;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      width: 7rem;
+      height: 7rem;
+    }
   }
   
   .weather--day {
