@@ -51,7 +51,7 @@ const WeatherData = ({selectedCityObject}) => {
                 {error && <p style={{ color: 'red' }}>{error}</p>}
             </div>
 
-            {!loading && !error && <div id="weather-container">
+            {!loading && !error && <div id="weather--container">
                 {weatherData.length > 0 && (!loading || !error) ? (
                 weatherData.map((entry, index) => (
                     <div>
