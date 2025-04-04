@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/weather.css'
+import '../css/weather-styles.css'
 
 const WeatherDate = ({ index }) => {
 

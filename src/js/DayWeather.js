@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import WeatherDate from './WeatherDate';
 import WeatherTypes from './WeatherTypes'
-import '../css/weather.css'
+import '../css/weather-styles.css'
 
 const DayWeather = ({ weatherType, index }) => {
   const [weatherData, setWeatherData] = useState({});

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import DayWeather from './DayWeather';
 import { ThreeDot } from 'react-loading-indicators';
-import '../css/weather.css'
+import '../css/weather-styles.css'
 
 const WeatherData = ({ selectedCityObject }) => {
     const [weatherData, setWeatherData] = useState([]);
