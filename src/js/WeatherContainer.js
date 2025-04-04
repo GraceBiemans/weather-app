@@ -1,71 +1,71 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState, useCallback } from 'react';
 import DayWeather from './DayWeather';
 import { ThreeDot } from 'react-loading-indicators';
+import '../css/weather.css'
 
-const WeatherData = ({selectedCityObject}) => {
-
+const WeatherData = ({ selectedCityObject }) => {
     const [weatherData, setWeatherData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [cityData, setCityData] = useState(selectedCityObject);
 
-    let url = `https://www.7timer.info/bin/api.pl?lon=${cityData.longitude}&lat=${cityData.latitude}&product=civillight&output=json`;
+    const cityData = selectedCityObject;
 
-    useEffect(() => {
-        setCityData(selectedCityObject);
-    }, [selectedCityObject])
+    const url = `https://www.7timer.info/bin/api.pl?lon=${cityData.longitude}&lat=${cityData.latitude}&product=civillight&output=json`;
 
-    useEffect(() => {
-        const fetchWeatherData = async () => {
-            try {
-                setLoading(true);
+    const fetchWeatherData = useCallback(async () => {
+        setLoading(true);
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
 
-                const response = await fetch(url);
-                const data = await response.json();
-
-                if (data && data.dataseries) {
-                    setWeatherData(data.dataseries);
-                } else {
-                    setError('No weather data found');
-                }
-            } catch (err) {
-                setError('Error fetching weather data');
-                console.error('Error fetching weather data:', err);
-            } finally {
-                setLoading(false);
+            if (data?.dataseries) {
+                setWeatherData(data.dataseries);
+            } else {
+                setError('No weather data found');
             }
-        };
+        } catch (err) {
+            setError('Error fetching weather data');
+            console.error('Error fetching weather data:', err);
+        } finally {
+            setLoading(false);
+        }
+    }, [cityData, url]);
 
+    useEffect(() => {
         fetchWeatherData();
-    }, [cityData]);
+    }, [fetchWeatherData]);
+
+    const renderLoading = () => (
+        <span>
+            <ThreeDot variant="bounce" color="#ADD8E6" size="medium" />
+            <p>Loading weather data...</p>
+        </span>
+    );
+
+    const renderError = () => <p style={{ color: 'red' }}>{error}</p>;
+
+    const renderWeatherItems = () => {
+        if (weatherData.length === 0) {
+            return <p>No weather data available.</p>;
+        }
+
+        return weatherData.map((entry, index) => (
+            <div key={index} className="weather--item tooltip">
+                <DayWeather weatherType={entry.weather} index={index} />
+            </div>
+        ));
+    };
 
     return (
         <div>
             <div className='weather--messages'>
-                {loading && 
-                    <span>
-                        <ThreeDot variant="bounce" color="#ADD8E6" size="medium" text="" textColor="" />
-                        <p>Loading weather data...</p>
-                    </span>
-                }
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                {loading && renderLoading()}
+                {error && renderError()}
             </div>
 
-            {!loading && !error && <div id="weather-container">
-                {weatherData.length > 0 && (!loading || !error) ? (
-                weatherData.map((entry, index) => (
-                    <div>
-                        <div key={index} className="weather--item tooltip">
-                            <DayWeather weatherType={entry.weather} index={index} />
-                        </div>
-                    </div>
-                ))
-                ) : (
-                <p>No weather data available.</p>
-                )}
-            </div>}
+            {!loading && !error && <div id="weather--container">{renderWeatherItems()}</div>}
         </div>
-    )
-}
+    );
+};
 
 export default WeatherData;

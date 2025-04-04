@@ -5,11 +5,7 @@ import CityDropdown from './js/CityDropdown';
 
 function App() {
 
-  const [selectedCity, setSelectedCity] = useState({
-      'city': '',
-      'longitude': null,
-      'latitude': null
-    }
+  const [selectedCity, setSelectedCity] = useState({}
   );
 
   const handleCityChange = (cityObject) => {

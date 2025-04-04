@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import cityData from '../city_coordinates.json';
-import '../css/CityDropdown.css';
+import '../css/city-dropdown.css';
 
 const CityDropdown = ({ onCityChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,17 +20,17 @@ const CityDropdown = ({ onCityChange }) => {
 
   return (
     <div className="city-dropdown--container">
-      <div className="custom-dropdown" onClick={toggleDropdown}>
-        <div className="dropdown-selected">
+      <div className="city-dropdown" onClick={toggleDropdown}>
+        <div className="city-dropdown--selected">
           {selectedOption || 'Select a city'}
         </div>
 
         {isOpen && (
-          <ul className="dropdown-options">
+          <ul className="city-dropdown--options">
             {options.map((option) => (
               <li
                 key={option.city}
-                className="dropdown-option"
+                className="city-dropdown--option"
                 onClick={() => handleOptionSelect(option)}
               >
                 {option.city}, {option.country}

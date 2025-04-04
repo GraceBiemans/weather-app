@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import WeatherDate from './WeatherDate';
 import WeatherTypes from './WeatherTypes'
-import '../css/Weather.css'
+import '../css/weather.css'
 
 const DayWeather = ({ weatherType, index }) => {
   const [weatherData, setWeatherData] = useState({});
@@ -17,7 +17,7 @@ const DayWeather = ({ weatherType, index }) => {
             <div className="weather--icon">{weatherData.icon}</div>
             <div className="weather--type">{weatherData.label}</div>
         </div>
-        <span class="tooltiptext">{weatherData.description}</span>
+        <span className="tooltip--text">{weatherData.description}</span>
     </span>
   );
 };

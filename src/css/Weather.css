@@ -1,4 +1,4 @@
-#weather-container {
+#weather--container {
     display: grid;
     justify-items: center;
     padding: 10px;
@@ -6,11 +6,11 @@
     grid-template-columns: auto auto;
     grid-gap: 0.75rem;
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 37.5rem) {
       grid-gap: 1.5rem;
     }
 
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 64rem) {
       display: flex;
     }
   }
@@ -25,12 +25,12 @@
     width: 8rem;
     height: 7rem;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       width: 15rem;
       height: 7rem;
     }
 
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 64rem) {
       width: 7rem;
       height: 7rem;
     }
@@ -57,8 +57,13 @@
     position: relative;
     display: inline-block;
   }
+
+  .tooltip:hover {
+    background-color: #aacdd7;
+    box-shadow: 10px 10px 10px gray;
+  }
   
-  .tooltip .tooltiptext {
+  .tooltip .tooltip--text {
     font-size: 0.75rem;
     visibility: hidden;
     width: 120px;
@@ -68,11 +73,12 @@
     border-radius: 15px;
     padding: 15px;
     position: absolute;
+    left: 0.9rem;
     z-index: 1;
     box-shadow: 5px 10px 10px lightgray;
   }
   
-  .tooltip:hover .tooltiptext {
+  .tooltip:hover .tooltip--text {
     visibility: visible;
   }
 
